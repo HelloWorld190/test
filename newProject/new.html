@@ -6,13 +6,17 @@
 <script>
   let d = new Date();
   alert("Today's date is " + d);
+  function changeToTrollFace() {
+    document.getElementById("changingImage").src = "trollface.png";
+  }
   </script>
 </head>
 <body>
 
 <h1>Hello world!</h1>
 <div><img src="img_hello_world.png" alt="Hello World from Space"
-style="width:100%;max-width:960px"></div>
+style="width:100%;max-width:960px" id="changingImage"></div>
+<button type="button" onclick="changeToTrollFace()">Cool ahh button</button>
 <p>This is the first file in my new Git Repo.</p>
 <p>A new line in our file!</p>
   <h1>Imagine having this useless yee yee ahh line title in your code</h1>
